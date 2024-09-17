@@ -1,0 +1,148 @@
+.traffic-light {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 180px;
+    height: 400px;
+    background-color: black;
+    padding-left: 10px;
+    border-radius: 10px;
+  }
+  
+  .light {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #333;
+    transition: background-color 0.5s;
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    color: white;
+  }
+  
+  .green {
+    background-color: #28a745;
+  }
+  
+  .yellow {
+    background-color: #ffc107;
+  }
+  
+  .red {
+    background-color: #dc3545;
+  }
+  
+  .timer {
+    text-align: center;
+    margin-top: 10px;
+    color: white;
+    font-size: 16px;
+  }
+
+  .light-timer-text{
+    text-align: center;
+    margin-top: 4px;
+    color: white;
+    font-size: 21px;
+    font-weight: 700;
+    font-style: italic;
+    margin-left: 10px;
+  }
+
+  .traffic-light-container{
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-around; */
+    width: 130px;
+    /* height: 300px; */
+    background-color: black;
+    padding: 10px;
+    border-radius: 10px;
+    gap: 10px;
+  }
+
+
+
+.traffic-light-side-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  width: 200px;
+}
+
+.light-side-text {
+  width: 200px;
+  height: 60px;
+  margin: 10px 0;
+  margin-top: 15px;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  color: white;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  text-align: center;
+}
+
+
+.text {
+  /* background: rgba(0, 0, 0, 0.2); */
+  padding: 5px;
+  border-radius: 3px;
+}
+
+.text span {
+  font-size: 16px;
+}
+
+
+.traffic-light-container-with-text{
+  display: flex;
+  flex-direction: row;
+  /* justify-content: space-around; */
+  width: 130px;
+  /* height: 300px; */
+  /* background-color: black; */
+  padding: 10px;
+  border-radius: 10px;
+  /* gap: 10px; */
+}
+
+
+.emergency {
+  width: 80px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: red; 
+  border-radius: 50%;
+  animation: emergencyBlink 1s infinite;
+}
+
+@keyframes emergencyBlink {
+  0% {
+    background-color: rgb(250, 226, 15);
+  }
+  50% {
+    background-color: rgb(246, 55, 55);
+  }
+  100% {
+    background-color: rgb(3, 99, 233);
+  }
+}
+
+.emergency-text {
+  color: white;
+  font-size: 16px;
+  background-color: red; 
+  animation: emergencyBlink 1s infinite;
+}
+
