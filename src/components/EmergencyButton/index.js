@@ -11,7 +11,7 @@ const EmergencyButton = () => {
 
     setTimeout(() => {
       dispatch({ type: 'EMERGENCY_OVERRIDE_OFF' });
-    }, 15000); 
+    }, 10000); 
   };
 
   return (
